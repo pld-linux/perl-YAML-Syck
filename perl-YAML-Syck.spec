@@ -6,6 +6,7 @@
 %define	pdir	YAML
 %define	pnam	Syck
 Summary:	YAML::Syck - Fast, lightweight YAML loader and dumper
+Summary(pl):	YAML::Syck - szybki, lekki modu³ do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
 Version:	0.64
 Release:	1
@@ -31,6 +32,16 @@ NOTE: If you are working with other language's YAML/Syck bindings
 (such as Ruby), please set $YAML::Syck::ImplicitTyping to 1 before
 calling the Load/Dump functions. The default setting is for preserving
 backward-compatibility with YAML.pm.
+
+%description -l pl
+Ten modu³ udostêpnia perlowy interfejs do biblioteki serializacji
+danych libsyck. Eksportuje funkcje Dump i Load do przekszta³cania
+perlowych struktur danych na ³añcuchy YAML i z powrotem.
+
+Uwaga: je¶li pracujemy z dowi±zaniami YAML/Sych dla innego jêzyka
+(np. Ruby), nale¿y ustawiæ $YAML::Syck::ImplicitTyping na 1 przed
+wywo³aniem funkcji Load/Dump. Domy¶lne ustawienie jest dla zachowania
+wstecznej zgodno¶ci z YAML.pm.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
