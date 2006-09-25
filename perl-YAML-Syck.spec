@@ -8,13 +8,13 @@
 Summary:	YAML::Syck - Fast, lightweight YAML loader and dumper
 Summary(pl):	YAML::Syck - szybki, lekki modu³ do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
-Version:	0.64
+Version:	0.66
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUDREYT/YAML-Syck-%{version}.tar.gz
-# Source0-md5:	51054b5da582e381158f10276f82ae15
+# Source0-md5:	ad00ea41dc58cad377772b6f650558f8
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
