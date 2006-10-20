@@ -3,18 +3,18 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	YAML
-%define	pnam	Syck
-Summary:	YAML::Syck - Fast, lightweight YAML loader and dumper
+%define		pdir	YAML
+%define		pnam	Syck
+Summary:	YAML::Syck - fast, lightweight YAML loader and dumper
 Summary(pl):	YAML::Syck - szybki, lekki modu³ do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
-Version:	0.66
+Version:	0.71
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUDREYT/YAML-Syck-%{version}.tar.gz
-# Source0-md5:	ad00ea41dc58cad377772b6f650558f8
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/YAML-Syck-%{version}.tar.gz
+# Source0-md5:	c24b223c74504971b62cc7a94fee5f17
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
