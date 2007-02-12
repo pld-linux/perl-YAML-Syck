@@ -6,7 +6,7 @@
 %define		pdir	YAML
 %define		pnam	Syck
 Summary:	YAML::Syck - fast, lightweight YAML loader and dumper
-Summary(pl.UTF-8):   YAML::Syck - szybki, lekki moduł do wczytywania i zrzucania YAML-a
+Summary(pl.UTF-8):	YAML::Syck - szybki, lekki moduł do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
 Version:	0.71
 Release:	1
