@@ -6,7 +6,7 @@
 %define		pdir	YAML
 %define		pnam	Syck
 Summary:	YAML::Syck - fast, lightweight YAML loader and dumper
-Summary(pl):	YAML::Syck - szybki, lekki modu≥ do wczytywania i zrzucania YAML-a
+Summary(pl.UTF-8):   YAML::Syck - szybki, lekki modu≈Ç do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
 Version:	0.71
 Release:	1
@@ -33,15 +33,15 @@ NOTE: If you are working with other language's YAML/Syck bindings
 calling the Load/Dump functions. The default setting is for preserving
 backward-compatibility with YAML.pm.
 
-%description -l pl
-Ten modu≥ udostÍpnia perlowy interfejs do biblioteki serializacji
-danych libsyck. Eksportuje funkcje Dump i Load do przekszta≥cania
-perlowych struktur danych na ≥aÒcuchy YAML i z powrotem.
+%description -l pl.UTF-8
+Ten modu≈Ç udostƒôpnia perlowy interfejs do biblioteki serializacji
+danych libsyck. Eksportuje funkcje Dump i Load do przekszta≈Çcania
+perlowych struktur danych na ≈Ça≈Ñcuchy YAML i z powrotem.
 
-Uwaga: je∂li pracujemy z dowi±zaniami YAML/Sych dla innego jÍzyka
-(np. Ruby), naleøy ustawiÊ $YAML::Syck::ImplicitTyping na 1 przed
-wywo≥aniem funkcji Load/Dump. Domy∂lne ustawienie jest dla zachowania
-wstecznej zgodno∂ci z YAML.pm.
+Uwaga: je≈õli pracujemy z dowiƒÖzaniami YAML/Sych dla innego jƒôzyka
+(np. Ruby), nale≈ºy ustawiƒá $YAML::Syck::ImplicitTyping na 1 przed
+wywo≈Çaniem funkcji Load/Dump. Domy≈õlne ustawienie jest dla zachowania
+wstecznej zgodno≈õci z YAML.pm.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
