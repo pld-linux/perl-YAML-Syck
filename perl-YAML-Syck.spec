@@ -80,6 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/YAML/Loader/Syck.pm
 %dir %{perl_vendorarch}/auto/YAML
 %dir %{perl_vendorarch}/auto/YAML/Syck
-%{perl_vendorarch}/auto/YAML/Syck/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/YAML/Syck/*.so
 %{_mandir}/man3/*
