@@ -8,19 +8,16 @@
 Summary:	YAML::Syck - fast, lightweight YAML loader and dumper
 Summary(pl.UTF-8):	YAML::Syck - szybki, lekki moduł do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
-Version:	1.27
-Release:	5
-# same as perl
-License:	GPL v1+ or Artistic
+Version:	1.29
+Release:	1
+License:	MIT
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8920091e68a078cfa9c42041e5759162
+# Source0-md5:	0f906ae8b3747039b26c29c481cda607
 URL:		http://search.cpan.org/dist/YAML-Syck/
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.59
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-BuildRequires:	perl-YAML >= 0.60
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -62,23 +59,20 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/YAML/Syck.pod
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
-%dir %{perl_vendorarch}/YAML
-%{perl_vendorarch}/YAML/*.pm
+%doc COMPATIBILITY Changes README
+%{perl_vendorarch}/YAML/Syck.pm
 %dir %{perl_vendorarch}/JSON
 %{perl_vendorarch}/JSON/Syck.pm
 %dir %{perl_vendorarch}/YAML/Dumper
 %{perl_vendorarch}/YAML/Dumper/Syck.pm
 %dir %{perl_vendorarch}/YAML/Loader
 %{perl_vendorarch}/YAML/Loader/Syck.pm
-%dir %{perl_vendorarch}/auto/YAML
 %dir %{perl_vendorarch}/auto/YAML/Syck
-%attr(755,root,root) %{perl_vendorarch}/auto/YAML/Syck/*.so
-%{_mandir}/man3/*
+%attr(755,root,root) %{perl_vendorarch}/auto/YAML/Syck/Syck.so
+%{_mandir}/man3/JSON::Syck.3pm*
+%{_mandir}/man3/YAML::Syck.3pm*
