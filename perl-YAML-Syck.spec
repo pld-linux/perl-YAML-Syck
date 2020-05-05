@@ -8,7 +8,7 @@ Summary:	YAML::Syck - fast, lightweight YAML loader and dumper
 Summary(pl.UTF-8):	YAML::Syck - szybki, lekki moduł do wczytywania i zrzucania YAML-a
 Name:		perl-YAML-Syck
 Version:	1.31
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -65,7 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COMPATIBILITY Changes
 %{perl_vendorarch}/YAML/Syck.pm
-%dir %{perl_vendorarch}/JSON
 %{perl_vendorarch}/JSON/Syck.pm
 %dir %{perl_vendorarch}/YAML/Dumper
 %{perl_vendorarch}/YAML/Dumper/Syck.pm
