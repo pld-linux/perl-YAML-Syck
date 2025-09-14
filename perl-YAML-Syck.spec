@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	YAML
 %define		pnam	Syck
@@ -11,9 +11,9 @@ Version:	1.34
 Release:	6
 License:	MIT
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/YAML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4aae72f5c06dccd6ed6ea9b029104183
-URL:		https://metacpan.org/release/YAML-Syck
+URL:		https://metacpan.org/dist/YAML-Syck
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.59
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
